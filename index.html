@@ -1,101 +1,194 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Plano de Estudos</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Plano de Estudos - Polícia Federal</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
 </head>
 <body>
   <header>
-    <h1>Plano de Estudos - Polícia Civil MS</h1>
+    <h1>Plano de Estudos - Polícia Federal</h1>
+    <button id="marcar-tudo">Marcar Tudo Como Estudado</button>
   </header>
 
   <main>
-    <section class="study-plan">
-      <h2>Organização do Plano de Estudos</h2>
-      
-      <!-- Dias da semana -->
-      <div class="days">
-        <div class="day">Segunda-feira</div>
-        <div class="day">Terça-feira</div>
-        <div class="day">Quarta-feira</div>
-        <div class="day">Quinta-feira</div>
-        <div class="day">Sexta-feira</div>
-        <div class="day">Sábado</div>
-        <div class="day">Domingo</div>
+    <section class="conteudos">
+      <h2>Conteúdo para Estudar</h2>
+
+      <div class="materia">
+        <h3>Noções de Direito Constitucional</h3>
+        <ul>
+          <li><input type="checkbox"> Constituição Federal: conceito, classificações, princípios</li>
+          <li><input type="checkbox"> Segurança Pública: Artigo 144</li>
+          <li><input type="checkbox"> Direitos e garantias fundamentais</li>
+          <li><input type="checkbox"> Direitos sociais, nacionalidade, cidadania</li>
+          <li><input type="checkbox"> Direitos políticos e partidos políticos</li>
+          <li><input type="checkbox"> Organização político-administrativa</li>
+          <li><input type="checkbox"> Administração pública e servidores</li>
+          <li><input type="checkbox"> Poder Executivo: presidente e ministros</li>
+          <li><input type="checkbox"> Finanças públicas e orçamentos</li>
+          <li><input type="checkbox"> Ordem social e previdência social</li>
+        </ul>
       </div>
 
-      <!-- Matérias e horários -->
-      <div class="subjects">
-        <div class="subject-box">
-          <h3>Segunda-feira</h3>
-          <ul>
-            <li><strong>19h às 20h:</strong> Direito Penal</li>
-            <li><strong>20h às 21h:</strong> Questões de Direito Penal</li>
-            <li><strong>21h às 22h:</strong> Revisão de Direito Penal</li>
-          </ul>
-        </div>
+      <div class="materia">
+        <h3>Noções de Direito Administrativo</h3>
+        <ul>
+          <li><input type="checkbox"> Organização administrativa (centralização, descentralização)</li>
+          <li><input type="checkbox"> Administração direta e indireta</li>
+          <li><input type="checkbox"> Autarquias, fundações, empresas públicas</li>
+          <li><input type="checkbox"> Ato administrativo: conceito, requisitos</li>
+          <li><input type="checkbox"> Atributos e espécies de atos administrativos</li>
+          <li><input type="checkbox"> Agentes públicos (Lei nº 8.112/90)</li>
+          <li><input type="checkbox"> Poderes administrativos</li>
+          <li><input type="checkbox"> Uso e abuso do poder</li>
+          <li><input type="checkbox"> Licitações e contratos</li>
+          <li><input type="checkbox"> Controle da administração pública</li>
+          <li><input type="checkbox"> Responsabilidade civil do Estado</li>
+          <li><input type="checkbox"> Regime jurídico-administrativo</li>
+          <li><input type="checkbox"> LGPD (Lei nº 13.709/18)</li>
+          <li><input type="checkbox"> Decreto nº 9.830/2019</li>
+          <li><input type="checkbox"> Lei nº 9.784/1999</li>
+        </ul>
+      </div>
 
-        <div class="subject-box">
-          <h3>Terça-feira</h3>
-          <ul>
-            <li><strong>19h às 20h:</strong> Direito Administrativo</li>
-            <li><strong>20h às 21h:</strong> Questões de Direito Administrativo</li>
-            <li><strong>21h às 22h:</strong> Revisão de Direito Administrativo</li>
-          </ul>
-        </div>
+      <div class="materia">
+        <h3>Noções de Governança Pública</h3>
+        <ul>
+          <li><input type="checkbox"> Teorias da administração</li>
+          <li><input type="checkbox"> Estruturas organizacionais</li>
+          <li><input type="checkbox"> Cultura organizacional</li>
+          <li><input type="checkbox"> Governança e gestão pública</li>
+          <li><input type="checkbox"> Planejamento estratégico</li>
+          <li><input type="checkbox"> Gestão de resultados e processos</li>
+          <li><input type="checkbox"> Gestão de projetos</li>
+          <li><input type="checkbox"> Inovação e ética pública</li>
+        </ul>
+      </div>
 
-        <div class="subject-box">
-          <h3>Quarta-feira</h3>
-          <ul>
-            <li><strong>19h às 20h:</strong> Português</li>
-            <li><strong>20h às 21h:</strong> Questões de Português</li>
-            <li><strong>21h às 22h:</strong> Revisão de Português</li>
-          </ul>
-        </div>
+      <div class="materia">
+        <h3>Noções de Gestão de Pessoas</h3>
+        <ul>
+          <li><input type="checkbox"> Modelos de gestão de pessoas</li>
+          <li><input type="checkbox"> Recrutamento, seleção, treinamento</li>
+          <li><input type="checkbox"> Gestão de desempenho e motivação</li>
+          <li><input type="checkbox"> Comportamento humano, equipes e conflitos</li>
+          <li><input type="checkbox"> Gestão do conhecimento</li>
+          <li><input type="checkbox"> Qualidade de vida no trabalho</li>
+        </ul>
+      </div>
 
-        <div class="subject-box">
-          <h3>Quinta-feira</h3>
-          <ul>
-            <li><strong>19h às 20h:</strong> Direito Processual Penal</li>
-            <li><strong>20h às 21h:</strong> Questões de Direito Processual Penal</li>
-            <li><strong>21h às 22h:</strong> Revisão de Direito Processual Penal</li>
-          </ul>
-        </div>
+      <div class="materia">
+        <h3>Noções de Gestão de Contratos e Recursos Materiais</h3>
+        <ul>
+          <li><input type="checkbox"> Licitação: Lei nº 14.133/2021 e normas relacionadas</li>
+          <li><input type="checkbox"> Elaboração e fiscalização de contratos</li>
+          <li><input type="checkbox"> Classificação de materiais</li>
+          <li><input type="checkbox"> Gestão de estoques</li>
+          <li><input type="checkbox"> Recebimento e armazenagem</li>
+          <li><input type="checkbox"> Gestão patrimonial</li>
+        </ul>
+      </div>
 
-        <div class="subject-box">
-          <h3>Sexta-feira</h3>
-          <ul>
-            <li><strong>19h às 20h:</strong> Informática</li>
-            <li><strong>20h às 21h:</strong> Questões de Informática</li>
-            <li><strong>21h às 22h:</strong> Revisão de Informática</li>
-          </ul>
-        </div>
-        
-        <div class="subject-box">
-          <h3>Sábado</h3>
-          <ul>
-            <li><strong>8h às 10h:</strong> Simulado 1 (40 questões)</li>
-            <li><strong>14h às 16h:</strong> Correção do Simulado</li>
-            <li><strong>16h às 18h:</strong> Revisão de erros</li>
-          </ul>
-        </div>
-        
-        <div class="subject-box">
-          <h3>Domingo</h3>
-          <ul>
-            <li><strong>9h às 11h:</strong> Simulado 2 (40 questões)</li>
-            <li><strong>14h às 16h:</strong> Revisão dos erros do Simulado</li>
-            <li><strong>16h às 18h:</strong> Revisão geral</li>
-          </ul>
-        </div>
+      <div class="materia">
+        <h3>Legislação Aplicada à Polícia Federal</h3>
+        <ul>
+          <li><input type="checkbox"> Lei nº 7.102/1983 (segurança para estabelecimentos)</li>
+          <li><input type="checkbox"> Lei nº 10.357/2001 (controle de produtos químicos)</li>
+          <li><input type="checkbox"> Lei nº 6.815/1980 (estrangeiros)</li>
+          <li><input type="checkbox"> Lei nº 10.826/2003 (estatuto do desarmamento)</li>
+          <li><input type="checkbox"> Lei nº 12.830/2013 (investigação criminal)</li>
+        </ul>
       </div>
     </section>
+
+   <section class="plano-diario">
+  <h2>Plano Diário de Estudos</h2>
+  <p>Estudar 1h por dia conforme o plano sugerido:</p>
+
+  <ul>
+    <li>29/04 - Constituição Federal: conceito e princípios</li>
+    <li>30/04 - Segurança Pública (Art. 144)</li>
+    <li>01/05 - Direitos e garantias fundamentais</li>
+    <li>02/05 - Direitos sociais e cidadania</li>
+    <li>03/05 - Direitos políticos e partidos</li>
+    <li>04/05 - Organização político-administrativa</li>
+    <li>05/05 - Administração pública e servidores</li>
+    <li>06/05 - Poder Executivo e seus ministérios</li>
+    <li>07/05 - Finanças públicas e orçamentos</li>
+    <li>08/05 - Ordem social e previdência social</li>
+    <li>09/05 - Organização administrativa e atos administrativos</li>
+    <li>10/05 - Agentes públicos e suas classificações</li>
+    <li>11/05 - Poderes administrativos e licitação</li>
+    <li>12/05 - Responsabilidade civil do Estado</li>
+    <li>13/05 - Regime jurídico-administrativo</li>
+    <li>14/05 - Lei nº 13.709/2018 (Lei Geral de Proteção de Dados)</li>
+    <li>15/05 - Decreto nº 9.830/2019 (motivação de decisão)</li>
+    <li>16/05 - Lei nº 9.784/1999 (processo administrativo federal)</li>
+    <li>17/05 - Teorias da administração e estruturas organizacionais</li>
+    <li>18/05 - Governança pública e planejamento estratégico</li>
+    <li>19/05 - Gestão de resultados e processos organizacionais</li>
+    <li>20/05 - Gestão de projetos e excelência nos serviços públicos</li>
+    <li>21/05 - Sustentabilidade pública e inovação na gestão</li>
+    <li>22/05 - Comunicação na gestão pública e ética administrativa</li>
+    <li>23/05 - Modelos de gestão de pessoas e recrutamento</li>
+    <li>24/05 - Gestão de desempenho e motivação no trabalho</li>
+    <li>25/05 - Comportamento humano, equipes e conflitos</li>
+    <li>26/05 - Gestão do conhecimento e qualidade de vida no trabalho</li>
+    <li>27/05 - Licitações: Lei nº 14.133/2021 e aspectos procedimentais</li>
+    <li>28/05 - Elaboração e fiscalização de contratos</li>
+    <li>29/05 - Classificação de materiais e gestão de estoques</li>
+    <li>30/05 - Recebimento, armazenagem e gestão patrimonial</li>
+    <li>31/05 - Licitações e contratos administrativos na prática</li>
+    <li>01/06 - Lei nº 7.102/1983: segurança para estabelecimentos</li>
+    <li>02/06 - Lei nº 10.357/2001: controle de produtos químicos</li>
+    <li>03/06 - Lei nº 6.815/1980: situação jurídica do estrangeiro</li>
+    <li>04/06 - Lei nº 10.826/2003: estatuto do desarmamento</li>
+    <li>05/06 - Lei nº 12.830/2013: investigação criminal</li>
+    <li>06/06 - Revisão geral dos estudos de Direito Constitucional</li>
+    <li>07/06 - Revisão geral de Direito Administrativo</li>
+    <li>08/06 - Revisão geral de Governança Pública</li>
+    <li>09/06 - Revisão geral de Gestão de Pessoas</li>
+    <li>10/06 - Revisão geral de Gestão de Contratos e Recursos Materiais</li>
+    <li>11/06 - Revisão geral de Legislação Aplicada à Polícia Federal</li>
+    <li>12/06 - Revisão intensiva: Constituição Federal e Direitos</li>
+    <li>13/06 - Revisão intensiva: Administração Pública e Agentes Públicos</li>
+    <li>14/06 - Revisão intensiva: Licitação e Contratos</li>
+    <li>15/06 - Revisão intensiva: Teorias da Administração</li>
+    <li>16/06 - Revisão intensiva: Gestão Pública e Governança</li>
+    <li>17/06 - Revisão intensiva: Gestão de Pessoas</li>
+    <li>18/06 - Revisão intensiva: Legislação Aplicada à Polícia Federal</li>
+    <li>19/06 - Revisão intensiva: Controle da Administração e Responsabilidade</li>
+    <li>20/06 - Revisão geral de todos os temas abordados</li>
+    <li>21/06 - Revisão final: foco em pontos de maior dificuldade</li>
+    <li>22/06 - Simulado com questões anteriores da Polícia Federal</li>
+    <li>23/06 - Simulado e revisão de erros</li>
+    <li>24/06 - Revisão final dos pontos críticos</li>
+    <li>25/06 - Estudo de última hora: revisando temas mais importantes</li>
+    <li>26/06 - Descanso e revisão leve</li>
+    <li>27/06 - Revisão final</li>
+    <li>28/06 - Preparação final</li>
+    <li>29/06 - **Dia da prova**!</li>
+  </ul>
+
+  <p><strong>Boa sorte na prova! Você já está preparado!</strong></p>
+</section>
+
   </main>
 
   <footer>
-    <p>Desenvolvido para auxiliar nos estudos - Boa sorte no concurso!</p>
+    <p>Projeto de Estudo Pessoal - Polícia Federal 2025</p>
   </footer>
+
+  <script>
+    const botaoMarcarTudo = document.getElementById('marcar-tudo');
+    botaoMarcarTudo.addEventListener('click', () => {
+      const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+      checkboxes.forEach(checkbox => checkbox.checked = true);
+    });
+  </script>
+
 </body>
 </html>
